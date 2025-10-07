@@ -1,5 +1,5 @@
 // controllers/itemController.js
-const Item = require('../models/Item');
+const Item = require('../models/itemModel');
 
 const getItems = async (req, res) => {
     const items = await Item.find();

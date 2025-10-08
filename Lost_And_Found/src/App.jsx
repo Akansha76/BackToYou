@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom"
 import Home from "./pages/Home.jsx"
 import Navbar from "./components/Navbar"
-import SignUp from "./pages/Signup.jsx"
+import SignUp from "./pages/SignUp.jsx"
 import Login  from "./pages/Login.jsx"
 import FoundItems from "./pages/FoundItems.jsx";
 import LostItems from "./pages/LostItems.jsx";

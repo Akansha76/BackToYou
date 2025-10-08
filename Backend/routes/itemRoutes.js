@@ -57,9 +57,10 @@ router.get("/", async (req, res) => {
   try {
     const items = await Item.find();
     res.json(items);
-  } catch (error) {
-    res.status(500).json({ message: "Error fetching items", error });
-  }
+  } catch (err) {
+  console.error(err); // logs to Vercel
+  res.status(500).json({ message: "Error fetching items", error: err.message });
+}
 });
 
 export default router;

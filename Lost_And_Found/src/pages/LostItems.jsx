@@ -4,7 +4,7 @@ const LostItems = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/items")
+    fetch("https://back-to-you.vercel.app/api/items")
       .then((res) => res.json())
       .then((data) => {
         const lostItems = data.filter((item) => item.status === "lost");
